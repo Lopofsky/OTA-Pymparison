@@ -1,0 +1,39 @@
+hotels:
+    css: li.listing
+    multiple: true
+    type: Text
+    children:
+        name:
+            css: h3.truncate-lines-2
+            type: Text
+        location:
+            css: div.overflow-wrap
+            type: Text
+        price:
+            #css: span.loyalty-display-price
+            # and span[contains(@data-stid,'price-lockup-text')]/following-sibling::Current
+            #xpath: //span[contains(@class,'loyalty-display-price')] and (text()=)/following-sibling::Current
+            xpath: //span[contains(@data-stid,'price-lockup-text')]
+            multiple: true
+            type: Text
+        price_for:
+            css: div.all-t-padding-one
+            type: Text
+        room_type:
+            css: strong
+            type: Text
+        beds:
+            css: div.c-beds-configuration
+            type: Text
+        rating:
+            css: span.uitk-type-bold
+            type: Text
+        rating_title:
+            css: span.pwa-theme--grey-700
+            type: Text
+        number_of_ratings:
+            css: span.pwa-theme--grey-700
+            type: Text
+        url:
+            css: a.listing__link
+            type: Link

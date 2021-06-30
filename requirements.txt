@@ -1,0 +1,6 @@
+requests
+selectorlib
+selenium
+selenium-wire
+dask[complete]
+xlsxwriter
