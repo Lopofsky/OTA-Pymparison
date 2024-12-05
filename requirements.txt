@@ -4,3 +4,6 @@ selenium
 selenium-wire
 dask[complete]
 xlsxwriter
+webdriver-manager
+pyppeteer
+nest_asyncio
